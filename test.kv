@@ -1,0 +1,90 @@
+<RootWidget>:
+	lbl:my_label
+	BoxLayout:
+        Button:
+		    text: "5"
+            font_size: 35
+            on_release: app.root.current = "other"
+            size: 70, 180
+            pos_hint: {'top': 1, 'left': 1}
+            size_hint: None, None
+            background_color: (2.55, 1.79, 0.91, 1.0)
+            on_press: root.five()
+
+	    Button:
+		    text:'6'
+		    background_color: (2.55, 1.79, 0.91, 1.0)
+		    font_size: 35
+            on_release: app.root.current = "other"
+            size: 70, 180
+            pos_hint: {'top': 1, 'left': 1}
+            size_hint: None, None
+		    on_press: root.six()
+
+	    Button:
+		    text:'7С'
+		    font_size: 35
+		    background_color: (2.55, 1.79, 0.91, 1.0)
+            on_release: app.root.current = "other"
+            pos_hint: {'top': 1, 'left': 1}
+            size: 70, 180
+            size_hint: None, None
+		    on_press: root.sevenc()
+
+	    Button:
+		    text:'7Т'
+		    font_size: 35
+            on_release: app.root.current = "other"
+            pos_hint: {'top': 1, 'left': 1}
+            size: 70, 180
+            background_color: (2.55, 1.79, 0.91, 1.0)
+            size_hint: None, None
+		    on_press: root.sevent()
+
+        Button:
+		    text:'8'
+		    font_size: 35
+            on_release: app.root.current = "other"
+            pos_hint: {'top': 1, 'left': 1}
+            size: 70, 180
+            background_color: (2.55, 1.79, 0.91, 1.0)
+            size_hint: None, None
+		    on_press: root.eight()
+
+    BoxLayout:
+        Button:
+		    text:'9'
+    		font_size: 35
+            on_release: app.root.current = "other"
+            pos_hint: {'center_x': 0.7, 'center_y': 0.3}
+            size: 70, 180
+            background_color: (2.55, 1.79, 0.91, 1.0)
+            size_hint: None, None
+		    on_press: root.nine()
+
+	    Button:
+    		text:'10'
+	    	font_size: 35
+            on_release: app.root.current = "other"
+            size: 70, 180
+            pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+            size_hint: None, None
+		    on_press: root.ten()
+		    background_color: (2.55, 1.79, 0.91, 1.0)
+
+    	Button:
+	    	text:'11'
+		    font_size: 35
+            on_release: app.root.current = "other"
+            size: 70, 180
+            pos_hint: {'center_x': 0.6, 'center_y': 0.3}
+            size_hint: None, None
+            background_color: (2.55, 1.79, 0.91, 1.0)
+    		on_press: root.eleven()
+
+	Label:
+		id: my_label
+		font_size: 20
+		text: ''
+		pos_hint: {'center_x': 2, 'center_y': 0.6}
+
