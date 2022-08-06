@@ -4,8 +4,6 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.lang.builder import Builder
 import datetime
 import pandas as pd
-from  kivy.core.window import Window
-Window.size = (360  , 780)
 Builder.load_file("test.kv")
 link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfwVsLoL3Q6qf9OS6LK4DLxh0BENiCQVxE54c4MVHFtCr3gPQFl-JmmDA9-7NoGfIFju41VeALR8dl/pub?gid=1500532275&single=true&output=csv'
 table = pd.read_csv(link).values.tolist()
